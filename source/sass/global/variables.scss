@@ -1,0 +1,38 @@
+/* Viewports */
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$desktop-width-only: 1199px;
+$mobile-width-only: 767px;
+/* Colors */
+$main-color: #ffffff;
+$light-green: #68b738;
+$basic_green-2: #5eaa2f;
+$light-green-background: rgba(104, 183, 56, 0.85);
+$error-color: #ff8282;
+$light-gray: #eaeaea;
+$light-gray-border: #e6e6e6;
+$light-gray-border-2: #e7e7e7;
+$footer-gray: #f2f2f2;
+$footer-gray-border: #d9d9d9;
+$special_dark-grey: #444444;
+$special_grey: #cdcdcd;
+$special-range-gray: #dcdcdc;
+$special_grey-3: #ebebeb;
+$special_grey-2: #666666;
+$special_dark-grey-2: #222222;
+$pre-black-color: #111111;
+$black-color: #000000;
+$catalog-border-color: #ededed;
+$input-hover-color: #bababa;
+$icon-gray-color: #d3d3d3;
+/* Fonts */
+$font-stack--Oswald-Regular:"Oswald Regular", "Arial", sans-serif;
+$font-stack--Oswald-Medium:"Oswald Medium", "Arial", sans-serif;
+
+/*
+@media (min-width: $tablet-width) {}
+@media (min-width: $desktop-width) {}
+*/
+
+//<!DOCTYPE Liky>

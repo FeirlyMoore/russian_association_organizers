@@ -1,0 +1,29 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.page-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 3px;
+  appearance: none;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 4px;
+  }
+}
+
+.page-progress::-webkit-progress-bar {
+  background: transparent;
+  opacity: 1;
+}
+
+.page-progress::-webkit-progress-value {
+  background: $light-green;
+}
+
+//<!DOCTYPE Liky>

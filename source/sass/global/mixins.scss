@@ -1,0 +1,37 @@
+@mixin block-position--flex($j-content, $width, $m-width) {
+  display: inline-flex;
+  justify-content: $j-content;
+  width: $width;
+  max-width: $m-width;
+}
+
+@mixin container() {
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@mixin hidden() {
+  display: none;
+}
+
+@mixin uppercase() {
+  text-transform: uppercase;
+}
+
+@mixin form-element() {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+}
+
+//@include block-position--flex();
+//@include container();
+//@include hidden();
+//@include uppercase();
+//@include form-element();
+
+//<!DOCTYPE Liky>
