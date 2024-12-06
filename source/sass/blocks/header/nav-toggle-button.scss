@@ -1,0 +1,50 @@
+.nav-toggle-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 65px;
+  height: 65px;
+  border: 0;
+  cursor: pointer;
+  background-color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .nav-toggle-button::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 20px;
+  width: 24px;
+  height: 2px;
+  background-color: $black-color;
+  box-shadow: 0 8px 0 0 $black-color, 0 16px 0 0 $black-color;
+}
+
+.main-nav--opened .nav-toggle-button {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 24px;
+    height: 2px;
+    background-color: $black-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+//<!DOCTYPE Liky>

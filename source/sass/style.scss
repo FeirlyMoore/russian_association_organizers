@@ -10,6 +10,8 @@
 
 // Сommon element styles
 @import "global/page.scss";
+@import "global/scroll.scss";
+@import "global/preloader.scss";
 
 // Pixel Perfect
 // @import "global/pixel-perfect.scss";
@@ -17,6 +19,11 @@
 /* Blocks */
 
 //Header
+@import "blocks/header/header.scss";
+@import "blocks/header/header-logo.scss";
+@import "blocks/header/nav-toggle-button.scss";
+@import "blocks/header/navigation.scss";
+@import "blocks/header/navigation-list.scss";
 // @import "blocks/header/header.scss";
 
 // index

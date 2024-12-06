@@ -11,6 +11,7 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
 const del = require('del');
+// const fileinclude = require('gulp-file-include');
 const sync = require('browser-sync').create();
 
 // Styles
@@ -50,6 +51,10 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src("source/js/script.js")
+    // .pipe(fileinclude({
+    //   prefix: '@@',
+    //   basepath: '@file'
+    // }))
     .pipe(gulp.dest("docs/js"))
     .pipe(gulp.dest("dist/js"))
     .pipe(rename("script.min.js"))

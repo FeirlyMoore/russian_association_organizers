@@ -1,0 +1,21 @@
+.main-nav {
+  @include container();
+  display: block;
+  height: fit-content;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-evenly;
+    width: 62.14%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    z-index: 1;
+  }
+}
+
+
+//<!DOCTYPE Liky>

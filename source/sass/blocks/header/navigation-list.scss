@@ -1,0 +1,128 @@
+.nav-list {
+  @include container();
+  display: block;
+  box-sizing: content-box;
+  float: right;
+  text-align: center;
+  list-style: none;
+  user-select: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.nav-list--style {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Oswald Medium", "Arial", sans-serif;
+}
+
+.nav-list__item {
+  @include uppercase();
+  font-family: "Oswald Medium", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: $black-color;
+  text-decoration: none;
+  white-space: nowrap;
+  display: block;
+  width: 100%;
+  padding: 22px 0;
+  text-align: center;
+  border-top: 1px solid $light-gray-border;
+
+  &:last-child {
+    border-bottom: 1px solid $light-gray-border;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: fit-content;
+    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    border-bottom: none;
+    border-top: none;
+    padding: 23px 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 35px;
+    margin-top: -2px;
+    padding: 20px 0;
+    color: $main-color;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav-list-index {
+  .nav-list__link {
+    @media (min-width: $desktop-width) {
+      color: inherit;
+    }
+  }
+
+  .nav-list__item--current {
+    .nav-list__link {
+      @media (min-width: $desktop-width) {
+        padding-bottom: 5px;
+        border-bottom: 2px solid $main-color;
+      }
+    }
+  }
+}
+
+.nav-list__item--current {
+  &.nav-list__item {
+    border-bottom: 1px solid $light-green;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+  }
+
+  .nav-list__link {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 10px;
+      border-bottom: 2px solid $light-green;
+    }
+  }
+}
+
+.main-nav--closed .nav-list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+//<!DOCTYPE Liky>

@@ -1,0 +1,56 @@
+.main-header {
+  @include container();
+  align-items: center;
+  height: fit-content;
+  background-color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0 30px;
+    margin: 20px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    padding: 51px 110px 0;
+    margin: 0 0 20px 0;
+  }
+}
+
+.main-header--no-index {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 51px 110px 0;
+    margin: 0 0 20px 0;
+  }
+}
+
+.main-header__wrapper {
+  // width: 76.56%;
+  width: 100%;
+  height: 66px;
+  margin: 0;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: fit-content;
+    // padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 2px 0 0 0;
+  }
+}

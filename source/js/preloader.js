@@ -1,7 +1,3 @@
-// @@include('preloader.js')
-// @@include('nav-button.js')
-// @@include('scroll.js')
-
 const preloader = document.querySelector('.preloader');
 
 window.onload = () => {
@@ -60,40 +56,5 @@ window.onload = () => {
     }
   }, 500);
 }
-
-let navToggle = document.querySelector('.nav-toggle-button--js');
-let nav = document.querySelector('.main-nav');
-
-nav.classList.remove('main-nav--opened');
-nav.classList.add('main-nav--closed');
-
-navToggle.onclick = function () {
-  if (nav.classList.contains('main-nav--closed')) {
-    nav.classList.remove("main-nav--closed");
-    nav.classList.add('main-nav--opened');
-  } else {
-    nav.classList.remove('main-nav--opened');
-    nav.classList.add('main-nav--closed');
-  }
-}
-
-let scrollLine = document.getElementById('page_progress');
-
-window.onscroll = function scrollFunc() {
-    let pageHeight = document.documentElement.scrollHeight;
-    let innerHeight = window.innerHeight;
-    let scroll = window.pageYOffset;
-
-    let progressPercent = scroll/((pageHeight-innerHeight)/100);
-    if (progressPercent == NaN) {
-        scrollLine.value = 0;
-    } else {
-        scrollLine.value = progressPercent.toFixed(2);
-    }
-    return progressPercent
-}
-
-// @@include('')
-// @@include('partial/')
 
 //<!DOCTYPE Liky>
